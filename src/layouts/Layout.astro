@@ -21,6 +21,16 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+
+  @tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+  @font-face {
+    font-family: "Space Grotesk";
+    src: url("fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+  }
+
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -36,6 +46,7 @@ const { title } = Astro.props;
     font-family: system-ui, sans-serif;
     background: #13151a;
     background-size: 224px;
+    
   }
   code {
     font-family:
@@ -48,4 +59,15 @@ const { title } = Astro.props;
       Courier New,
       monospace;
   }
+
+	body {
+		height: 100vh;
+		/*
+		* Created with https://www.css-gradient.com
+		* Gradient link: https://www.css-gradient.com/?c1=010101&c2=22032e&gt=r&gd=dbb
+		*/
+  		background: #010101;
+  		background: radial-gradient(at center bottom, #010101, #22032e);
+      font-family: Space Grotesk, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	}
 </style>

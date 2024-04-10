@@ -1,29 +1,17 @@
 ---
 import { Button } from '@nextui-org/react';
 import Layout from '../layouts/Layout.astro';
+import {Header}  from '../components/Header';
 ---
 
-<Layout title="Welcome to Astro." >
-	<main >
+<Layout title="Bitrock Skills" >
+	<main>
+		<Header client:only />
 		<Button color="primary" client:visible>My button</Button>
 	</main>
 </Layout>
 
 <style>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-
-	body {
-		height: 100vh;
-		/*
-		* Created with https://www.css-gradient.com
-		* Gradient link: https://www.css-gradient.com/?c1=010101&c2=22032e&gt=r&gd=dbb
-		*/
-  		background: #010101;
-  		background: radial-gradient(at center bottom, #010101, #22032e);
-	}
-
 	main {
 		margin: auto;
 		padding: 1rem;

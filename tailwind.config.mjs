@@ -7,7 +7,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        "Space Grotesk": ["Space Grotesk"],
+      },
+    },
+  },
   darkMode: "class",
   plugins: [
     nextui({
