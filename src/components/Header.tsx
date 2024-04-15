@@ -12,12 +12,12 @@ export const Header = () => {
   const activePage = window.location.pathname.replace("/", "");
 
   return (
-    <Navbar position="static" className="w-full rounded-md bg-transparent">
+    <Navbar position="static" className="w-full rounded-md bg-background">
       <NavbarBrand>
         <p className="font-bold text-inherit">BITROCK SKILLS</p>
-        <img src="/img/logo.png" alt="logo" height="30" width="30" />
+        <img src="/img/logo/logo.png" alt="logo" height="30" width="30" />
       </NavbarBrand>
-      <NavbarContent className="sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive={activePage === "skills"}>
           <Link href="/skills">Skills</Link>
         </NavbarItem>
