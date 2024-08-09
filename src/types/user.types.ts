@@ -1,5 +1,12 @@
 export interface IUser {
   id: string;
-  displayName: string;
-  photoURL: string;
+  name: string;
+  age: number;
+
+  avatar: string;
+  email: string;
+
+  role: string;
+  team: string;
+  status: string;
 }

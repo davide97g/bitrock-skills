@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@carbon/icons-react": "^11.46.0",
     "@nextui-org/react": "^2.2.10",
     "d3": "^7.9.0",
     "framer-motion": "^11.0.25",

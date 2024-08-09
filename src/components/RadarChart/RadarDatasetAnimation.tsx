@@ -50,11 +50,8 @@ export const RadarDatasetAnimation = ({
     <div
       className="p-4 bg-background flex flex-col"
       style={{
-        boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
-        backdropFilter: "blur( 4px )",
-        WebkitBackdropFilter: "blur( 4px )",
         borderRadius: "10px",
-        border: "1px solid rgba( 255, 255, 255, 0.18 ",
+        border: "1px solid rgba( 255, 255, 255, 0.18)",
       }}
     >
       <h3>Skills</h3>
